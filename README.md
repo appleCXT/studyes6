@@ -100,3 +100,10 @@ console.log('Hi');
 // Resolved
 //Promise新建后立即执行，所以首先输出的是”Promise”，之后then方法指定的回调函数将在当前脚本所有同步任务执行完才会执行，所以”Resolved”最后输出。
 ```
+## 解构
+* 参考资料：http://www.infoq.com/cn/articles/es6-in-depth-destructuring/
+```
+function move( {x=0,y=0}={} )
+{return[x,y];}
+move( {x:3,y:8} )//{x:3,y:8}是传值，调用move（）函数时将{x:3,y:8}赋值给{x=0,y=0}，一一对应下来，{x=3,y=8}
+```
